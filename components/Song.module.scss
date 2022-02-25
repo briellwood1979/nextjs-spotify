@@ -1,0 +1,81 @@
+@import '/scss/_variables.scss';
+
+.tracks {
+    display: block;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 560px;
+    padding: 15px;
+    li.tracklist {  
+        a {
+            align-items: center;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: row;
+            margin: 0 0 5px 0;
+            padding: 5px;
+            transition: all 0.1s ease-in-out;
+            text-decoration: none;
+            &:hover {
+                background: $darkgrey;
+            }
+        }
+        i {
+            background: $lightgrey;
+            border-radius: 2px;
+            color: $darkgrey;
+            display: inline-block;
+            height: 16px;
+            margin: 0 5px 0 0;
+            width: 16px;
+            font-size: 10px;
+            line-height: 16px;
+            font-style: normal;
+            text-align: center;
+            vertical-align: top;
+        }
+        img {
+            display: block;
+            width: 50px;
+        }
+        span {
+            color: $white;
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            span {
+                color: $lightergrey;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                margin-top: 5px;
+                transition: all 0.1s ease-in-out;
+            }
+        }
+    }
+}
+
+.tracks li.tracklist a:hover span span {
+    color: $white;
+}
+
+.trackthumb {
+    color: $white;
+    display: block;
+    margin-right: 15px;
+    text-decoration: none;
+    h2 {
+        font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    img {
+        max-width: 60px;
+        min-width: 60px;
+        width: 60px;
+    }
+}

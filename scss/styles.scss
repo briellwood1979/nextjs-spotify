@@ -1,0 +1,29 @@
+@font-face {
+    font-family: spotify;
+    src: url('../fonts/CircularSpUIv3T-Book.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: spotify;
+    src: url('../fonts/CircularSpUIv3T-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: spotify;
+    src: url('../fonts/CircularSpUIv3T-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    font-family: "spotify", sans-serif!important;
+}
+html {
+    background: #040e16;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
